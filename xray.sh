@@ -13,7 +13,7 @@ secs_to_human() {
 echo -e "${WB}Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 )) minute's $(( ${1} % 60 )) seconds${NC}"
 }
 start=$(date +%s)
-# GIHUB_REPO=raw.githubusercontent.com/whxxyu/conf
+#Hallo
 
 #Update & Upgrade
 apt update -y
@@ -85,9 +85,9 @@ bash acme.sh --issue -d $domain --server letsencrypt --keylength ec-256 --fullch
 clear
 echo -e "${GB}[ INFO ]${NC} ${YB}Setup Nginx & Xray Conf${NC}"
 echo "UQ3w2q98BItd3DPgyctdoJw4cqQFmY59ppiDQdqMKbw=" > /usr/local/etc/xray/serverpsk
-wget -q -O /usr/local/etc/xray/config.json https://raw.githubusercontent.com/whxxyu/conf/main/config.json
-wget -q -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/whxxyu/conf/main/nginx.conf
-wget -q -O /etc/nginx/conf.d/xray.conf https://raw.githubusercontent.com/whxxyu/conf/main/xray.conf
+wget -q -O /usr/local/etc/xray/config.json https://raw.githubusercontent.com/amarukael/configig/main/config.json
+wget -q -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/amarukael/config/main/nginx.conf
+wget -q -O /etc/nginx/conf.d/xray.conf https://raw.githubusercontent.com/amarukael/config/main/xray.conf
 systemctl restart nginx
 systemctl restart xray
 echo -e "${GB}[ INFO ]${NC} ${YB}Setup Done${NC}"
@@ -144,82 +144,82 @@ net.ipv4.tcp_max_orphans = 32768
 net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
 cd /usr/bin
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Main Menu${NC}"
-wget -q -O menu "https://raw.githubusercontent.com/whxxyu/why/main/menu/menu.sh"
-wget -q -O vmess "https://raw.githubusercontent.com/whxxyu/why/main/menu/vmess.sh"
-wget -q -O vless "https://raw.githubusercontent.com/whxxyu/why/main/menu/vless.sh"
-wget -q -O trojan "https://raw.githubusercontent.com/whxxyu/why/main/menu/trojan.sh"
-wget -q -O shadowsocks "https://raw.githubusercontent.com/whxxyu/why/main/menu/shadowsocks.sh"
-wget -q -O shadowsocks2022 "https://raw.githubusercontent.com/whxxyu/why/main/menu/shadowsocks2022.sh"
-wget -q -O socks "https://raw.githubusercontent.com/whxxyu/why/main/menu/socks.sh"
-wget -q -O allxray "https://raw.githubusercontent.com/whxxyu/why/main/menu/allxray.sh"
+wget -q -O menu "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/menu/menu.sh"
+wget -q -O vmess "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/menu/vmess.sh"
+wget -q -O vless "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/menu/vless.sh"
+wget -q -O trojan "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/menu/trojan.sh"
+wget -q -O shadowsocks "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/menu/shadowsocks.sh"
+wget -q -O shadowsocks2022 "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/menu/shadowsocks2022.sh"
+wget -q -O socks "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/menu/socks.sh"
+wget -q -O allxray "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/menu/allxray.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu Vmess${NC}"
-wget -q -O add-vmess "https://raw.githubusercontent.com/whxxyu/why/main/vmess/add-vmess.sh"
-wget -q -O del-vmess "https://raw.githubusercontent.com/whxxyu/why/main/vmess/del-vmess.sh"
-wget -q -O extend-vmess "https://raw.githubusercontent.com/whxxyu/why/main/vmess/extend-vmess.sh"
-wget -q -O trialvmess "https://raw.githubusercontent.com/whxxyu/why/main/vmess/trialvmess.sh"
-wget -q -O cek-vmess "https://raw.githubusercontent.com/whxxyu/why/main/vmess/cek-vmess.sh" 
+wget -q -O add-vmess "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/vmess/add-vmess.sh"
+wget -q -O del-vmess "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/vmess/del-vmess.sh"
+wget -q -O extend-vmess "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/vmess/extend-vmess.sh"
+wget -q -O trialvmess "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/vmess/trialvmess.sh"
+wget -q -O cek-vmess "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/vmess/cek-vmess.sh" 
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu Vless${NC}"
-wget -q -O add-vless "https://raw.githubusercontent.com/whxxyu/why/main/vless/add-vless.sh"
-wget -q -O del-vless "https://raw.githubusercontent.com/whxxyu/why/main/vless/del-vless.sh"
-wget -q -O extend-vless "https://raw.githubusercontent.com/whxxyu/why/main/vless/extend-vless.sh"
-wget -q -O trialvless "https://raw.githubusercontent.com/whxxyu/why/main/vless/trialvless.sh"
-wget -q -O cek-vless "https://raw.githubusercontent.com/whxxyu/why/main/vless/cek-vless.sh"
+wget -q -O add-vless "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/vless/add-vless.sh"
+wget -q -O del-vless "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/vless/del-vless.sh"
+wget -q -O extend-vless "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/vless/extend-vless.sh"
+wget -q -O trialvless "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/vless/trialvless.sh"
+wget -q -O cek-vless "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/vless/cek-vless.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu Trojan${NC}"
-wget -q -O add-trojan "https://raw.githubusercontent.com/whxxyu/why/main/trojan/add-trojan.sh"
-wget -q -O del-trojan "https://raw.githubusercontent.com/whxxyu/why/main/trojan/del-trojan.sh"
-wget -q -O extend-trojan "https://raw.githubusercontent.com/whxxyu/why/main/trojan/extend-trojan.sh"
-wget -q -O trialtrojan "https://raw.githubusercontent.com/whxxyu/why/main/trojan/trialtrojan.sh"
-wget -q -O cek-trojan "https://raw.githubusercontent.com/whxxyu/why/main/trojan/cek-trojan.sh"
+wget -q -O add-trojan "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/trojan/add-trojan.sh"
+wget -q -O del-trojan "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/trojan/del-trojan.sh"
+wget -q -O extend-trojan "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/trojan/extend-trojan.sh"
+wget -q -O trialtrojan "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/trojan/trialtrojan.sh"
+wget -q -O cek-trojan "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/trojan/cek-trojan.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu Shadowsocks${NC}"
-wget -q -O add-ss "https://github.com/whxxyu/why/blob/main/shadowsocks/add-ss.sh"
-wget -q -O del-ss "https://github.com/whxxyu/why/blob/main/shadowsocks/del-ss.sh"
-wget -q -O extend-ss "https://github.com/whxxyu/why/blob/main/shadowsocks/extend-ss.sh"
-wget -q -O trialss "https://github.com/whxxyu/why/blob/main/shadowsocks/trial-ss.sh"
-wget -q -O cek-ss "https://github.com/whxxyu/why/blob/main/shadowsocks/cek-ss.sh"
+wget -q -O add-ss "https://github.com/amarukael/kaelxray-script/blob/main/shadowsocks/add-ss.sh"
+wget -q -O del-ss "https://github.com/amarukael/kaelxray-script/blob/main/shadowsocks/del-ss.sh"
+wget -q -O extend-ss "https://github.com/amarukael/kaelxray-script/blob/main/shadowsocks/extend-ss.sh"
+wget -q -O trialss "https://github.com/amarukael/kaelxray-script/blob/main/shadowsocks/trial-ss.sh"
+wget -q -O cek-ss "https://github.com/amarukael/kaelxray-script/blob/main/shadowsocks/cek-ss.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu Shadowsocks 2022${NC}"
-wget -q -O add-ss2022 "https://raw.githubusercontent.com/whxxyu/why/main/shadowsocks2022/add-ss2022.sh"
-wget -q -O del-ss2022 "https://raw.githubusercontent.com/whxxyu/why/main/shadowsocks2022/del-ss2022.sh"
-wget -q -O extend-ss2022 "https://raw.githubusercontent.com/whxxyu/why/main/shadowsocks2022/extend-ss2022.sh"
-wget -q -O trialss2022 "https://raw.githubusercontent.com/whxxyu/why/main/shadowsocks2022/trialss2022.sh"
-wget -q -O cek-ss2022 "https://raw.githubusercontent.com/whxxyu/why/main/shadowsocks2022/cek-ss2022.sh"
+wget -q -O add-ss2022 "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/shadowsocks2022/add-ss2022.sh"
+wget -q -O del-ss2022 "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/shadowsocks2022/del-ss2022.sh"
+wget -q -O extend-ss2022 "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/shadowsocks2022/extend-ss2022.sh"
+wget -q -O trialss2022 "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/shadowsocks2022/trialss2022.sh"
+wget -q -O cek-ss2022 "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/shadowsocks2022/cek-ss2022.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu Socks5${NC}"
-wget -q -O add-socks "https://raw.githubusercontent.com/whxxyu/why/main/socks/add-socks.sh"
-wget -q -O del-socks "https://raw.githubusercontent.com/whxxyu/why/main/socks/del-socks.sh"
-wget -q -O extend-socks "https://raw.githubusercontent.com/whxxyu/why/main/socks/extend-socks.sh"
-wget -q -O trialsocks "https://raw.githubusercontent.com/whxxyu/why/main/socks/trialsocks.sh"
-wget -q -O cek-socks "https://raw.githubusercontent.com/whxxyu/why/main/socks/cek-socks.sh"
+wget -q -O add-socks "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/socks/add-socks.sh"
+wget -q -O del-socks "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/socks/del-socks.sh"
+wget -q -O extend-socks "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/socks/extend-socks.sh"
+wget -q -O trialsocks "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/socks/trialsocks.sh"
+wget -q -O cek-socks "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/socks/cek-socks.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu All Xray${NC}"
-wget -q -O add-xray "https://raw.githubusercontent.com/whxxyu/why/main/allxray/add-xray.sh"
-wget -q -O del-xray "https://raw.githubusercontent.com/whxxyu/why/main/allxray/del-xray.sh"
-wget -q -O extend-xray "https://raw.githubusercontent.com/whxxyu/why/main/allxray/extend-xray.sh"
-wget -q -O trialxray "https://raw.githubusercontent.com/whxxyu/why/main/allxray/trialxray.sh"
-wget -q -O cek-xray "https://raw.githubusercontent.com/whxxyu/why/main/allxray/cek-xray.sh"
+wget -q -O add-xray "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/allxray/add-xray.sh"
+wget -q -O del-xray "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/allxray/del-xray.sh"
+wget -q -O extend-xray "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/allxray/extend-xray.sh"
+wget -q -O trialxray "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/allxray/trialxray.sh"
+wget -q -O cek-xray "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/allxray/cek-xray.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Menu Log${NC}"
-wget -q -O log-create "https://raw.githubusercontent.com/whxxyu/why/main/log/log-create.sh"
-wget -q -O log-vmess "https://raw.githubusercontent.com/whxxyu/why/main/log/log-vmess.sh"
-wget -q -O log-vless "https://raw.githubusercontent.com/whxxyu/why/main/log/log-vless.sh"
-wget -q -O log-trojan "https://raw.githubusercontent.com/whxxyu/why/main/log/log-trojan.sh"
-wget -q -O log-ss "https://raw.githubusercontent.com/whxxyu/why/main/log/log-ss.sh"
-wget -q -O log-ss2022 "https://raw.githubusercontent.com/whxxyu/why/main/log/log-ss2022.sh"
-wget -q -O log-socks "https://raw.githubusercontent.com/whxxyu/why/main/log/log-socks.sh"
-wget -q -O log-allxray "https://raw.githubusercontent.com/whxxyu/why/main/log/log-allxray.sh"
+wget -q -O log-create "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/log/log-create.sh"
+wget -q -O log-vmess "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/log/log-vmess.sh"
+wget -q -O log-vless "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/log/log-vless.sh"
+wget -q -O log-trojan "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/log/log-trojan.sh"
+wget -q -O log-ss "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/log/log-ss.sh"
+wget -q -O log-ss2022 "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/log/log-ss2022.sh"
+wget -q -O log-socks "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/log/log-socks.sh"
+wget -q -O log-allxray "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/log/log-allxray.sh"
 sleep 0.5
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Other Menu${NC}"
-wget -q -O xp "https://raw.githubusercontent.com/whxxyu/why/main/other/xp.sh"
-wget -q -O dns "https://raw.githubusercontent.com/whxxyu/why/main/other/dns.sh"
-wget -q -O certxray "https://raw.githubusercontent.com/whxxyu/why/main/other/certxray.sh"
-wget -q -O xraymod "https://raw.githubusercontent.com/whxxyu/why/main/other/xraymod.sh"
-wget -q -O xrayofficial "https://raw.githubusercontent.com/whxxyu/why/main/other/xrayofficial.sh"
-wget -q -O about "https://raw.githubusercontent.com/whxxyu/why/main/other/about.sh"
-wget -q -O clear-log "https://raw.githubusercontent.com/whxxyu/why/main/other/clear-log.sh"
+wget -q -O xp "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/other/xp.sh"
+wget -q -O dns "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/other/dns.sh"
+wget -q -O certxray "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/other/certxray.sh"
+wget -q -O xraymod "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/other/xraymod.sh"
+wget -q -O xrayofficial "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/other/xrayofficial.sh"
+wget -q -O about "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/other/about.sh"
+wget -q -O clear-log "https://raw.githubusercontent.com/amarukael/kaelxray-script/main/other/clear-log.sh"
 echo -e "${GB}[ INFO ]${NC} ${YB}Download All Menu Done${NC}"
 sleep 2
 chmod +x add-vmess
@@ -300,7 +300,7 @@ echo ""
 echo ""
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat -a -d 10   
 echo ""
-echo -e "                  ${WB}XRAY SCRIPT BY WHXXYU${NC}"
+echo -e "                  ${WB}XRAY SCRIPT BY Amaru Kael${NC}"
 echo ""
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | lolcat -a -d 10 
 echo -e "  ${WB}»»» Protocol Service «««  |  »»» Network Protocol «««${NC}  "
