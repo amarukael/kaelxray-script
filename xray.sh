@@ -1,4 +1,3 @@
-rm -rf xray.sh
 clear
 NC='\e[0m'
 DEFBOLD='\e[39;1m'
